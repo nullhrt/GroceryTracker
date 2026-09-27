@@ -4,8 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grocery Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap"
+    rel="stylesheet">
   </head>
   <body>
+    <header class="title-block">
+      <h1>Grocery tracker</h1>
+      <p class="subtitle">College students deserve to eat too.</p>
+    </header>
+    <main>
+      <search>
+        <form id="grocery-search-form">
+          <label for="site-search" class="visually-hidden">Search the site:</label>
+          <input type="search" id="site-search" name="q" placeholder="Search an item" required />
+          <button type="submit">Search</button>
+        </form>
+      </search>
+
+      <!-- Results container to dynamically display Gemini API output -->
+      <section id="results" class="results-container"></section>
+    </main>
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
   </body>
